@@ -1,0 +1,49 @@
+		{% extends "layout.html" %}
+		{% block body %}
+
+		<header class="masthead2">
+	            <div class="container">
+	                <div class="masthead-subheading">Reading is to the mind what exercise is to the body</div>
+	                <div class="masthead-heading text-uppercase">Library Management System</div>
+
+	          		<div class="container row mb-5">
+	          			<a class="col-lg-6" href="/edit/0"><button type="button" class="btn btn-dark">Add New Entry</button></a>
+	                	<a class="col-lg-6" href="/logout"><button type="button" class="btn btn-dark">Logout</button></a>
+	          		</div>
+	      
+	               
+	                
+	                <table class="table">
+					  <thead>
+					    <tr>
+					      <th scope="col">ID</th>
+					      <th scope="col">Name</th>
+					      <th scope="col">Book</th>
+					      <th scope="col">Author</th>
+					      <th scope="col">Date</th>
+					      <th scope="col">Edit</th>
+					      <th scope="col">Delete</th>
+
+
+					    </tr>
+					  </thead>
+					  <tbody>
+					  	{% for m in member %}
+					    <tr>
+					      <td>{{m.id}}</td>
+					      <td>{{m.name}}</td>
+					      <td>{{m.book}}</td>
+					      <td>{{m.author}}</td>
+					      <td>{{m.date}}</td>
+					      <td><a href="/edit/{{m.id}}"><button class="btn btn-dark">Edit</button></a> </td>
+                          <td><a href="/delete/{{m.id}}"><button class="btn btn-dark">Delete</button></a> </td>
+
+
+					    </tr>
+					    {% endfor %}
+					  </tbody>
+					</table>
+	            </div>
+	        </header>
+
+		{% endblock%}

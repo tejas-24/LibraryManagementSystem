@@ -1,0 +1,21 @@
+{
+  "params":
+  {
+
+    "local_uri": "mysql://root:@localhost/codingthunder",
+    "prod_uri": "mysql://root:@localhost/codingthunder",
+    "heading": "Coding Thunder",
+    "sub_heading": "A Blog Liked By Pro Coders",
+    "gmail-user": "tejasgodse.tech@gmail.com",
+    "gmail-password": "Tejas@123",
+    "about_text": "Hi. My name is Tejas. And i am very bad boy",
+    "no_of_posts": 2,
+    "login_image": "login.svg",
+    "admin_username": "tejas",
+    "admin_password": "godse",
+    "upload_location":"C:\\Users\\Bedekar\\PycharmProjects\\Flask_Project\\static"
+  }
+
+
+
+}
